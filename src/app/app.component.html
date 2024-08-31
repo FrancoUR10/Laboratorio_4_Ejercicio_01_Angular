@@ -1,0 +1,28 @@
+<router-outlet />
+
+<p>Ingrese una edad:</p>
+<input type="number" [(ngModel)]="edadUno">
+<p>Ingrese otra edad:</p>
+<input type="number" [(ngModel)]="edadDos">
+<br>
+<br>
+
+<input type="button" value="Calcular" (click)="Calcular()">
+<input type="button" value="Limpiar" (click)="Limpiar()">
+<br>
+<br>
+
+<input type="text" disabled="true" value={{suma}}>
+<input type="text" disabled="true" value={{promedio}}>
+
+
+<br>
+<br>
+<p>Contenido de los componentes secundarios:</p>
+<p>****************************************</p>
+
+<app-bienvenido></app-bienvenido>
+<app-login></app-login>
+<app-error></app-error>
+
+<p>****************************************</p>
